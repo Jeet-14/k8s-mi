@@ -3,7 +3,7 @@ k8s migration test
 
 
 kind-cluster - for cluster config
-Appset - for 'application' on argo
+Appset - for 'application' on argo (Not needed)
 chart - helm chart for cronjob 
 kubent- report against diff k8s versions
 Que - question/query
@@ -38,4 +38,10 @@ argocd app create my-app \
 --sync-policy automated
 
 
+```
+
+Run kubent
+
+```bash
+ kubent --target-version 1.28.2 >> kubent/kubent_report_target_1_28_2.txt
 ```
