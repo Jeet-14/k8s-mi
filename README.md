@@ -45,3 +45,10 @@ Run kubent
 ```bash
  kubent --target-version 1.28.2 >> kubent/kubent_report_target_1_28_2.txt
 ```
+
+
+------------------------------------------------------------------------------------
+
+
+Created a new cluster v1.27, deployed argo and application as well.
+
