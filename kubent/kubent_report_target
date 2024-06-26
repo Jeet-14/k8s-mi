@@ -1,0 +1,5 @@
+__________________________________________________________________________________________
+>>> Deprecated APIs removed in 1.25 <<<
+------------------------------------------------------------------------------------------
+KIND      NAMESPACE   NAME      API_VERSION     REPLACE_WITH (SINCE)
+CronJob   default     hello     batch/v1beta1   batch/v1 (1.21.0)

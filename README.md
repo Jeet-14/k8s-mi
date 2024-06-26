@@ -24,3 +24,18 @@ kubectl -n argocd get secret argocd-initial-admin-secret -o jsonpath="{.data.pas
 
 kubectl port-forward svc/argocd-server -n argocd 8080:443
 ```
+
+ArgoCD login and Create App
+```bash
+argocd login localhost:8080 --username admin --password 6E########aZ  --insecure
+
+
+argocd app create my-app \
+--repo https://github.com/Jeet-14/k8s-mi \
+--path chart/mychart/nginx \
+--dest-server https://kubernetes.default.svc \
+--dest-namespace default \
+--sync-policy automated
+
+
+```
